@@ -12,5 +12,18 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-image:linear-gradient(to left top	,#FFDB58, #FF69B4, #FF8C00, #FA8072);
+}
+
+title {
+  width: 100%;
+}
+
+
+.play-button {
+  position: relative;
+  bottom: 0;
 }
