@@ -4,6 +4,7 @@ const introSong = new Audio ("../audio/intro.mp3")
 console.log(introSong)
 
 /*---------------------------- Variables (state) ----------------------------*/
+titleEl.parentNode.removeChild(titleEl);
 
 
 
@@ -19,3 +20,4 @@ titleEl.addEventListener("click",function(evt){
 
 
 /*-------------------------------- Functions --------------------------------*/
+
