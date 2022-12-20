@@ -23,10 +23,6 @@ function init (){
   board = 
   render()
 }
-function playWin(){
-  winSong.volume = .05
-  winSong.play()
-}
 
 let userState = 0
 function triggerPages (passedUserState) {
