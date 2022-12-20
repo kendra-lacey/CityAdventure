@@ -3,22 +3,22 @@ const storyLine = {
   {
     order:0,
     audio: "intro.mp3",
-    message: "Abbi and Ilana are two broke bestfriends living in NYC, press PLAY to go on a quest with them!",
+    message: "Abbi and Ilana are two broke bestfriends living in NYC...press PLAY to go on a quest with them!"
   },
 
   page1:
   { 
-    order: 1,
+    order:1,
     message:"Abbi has a tooth-ache and needs to get her wisdom teeth removed - but has no HeALTh inSurAnCe 😬", 
     optionOne: 
       {message: "Go to Central Park and people watch",
         image: "centralpark.png" },
     optionTwo:
       {message: "See Ilana's partner who is a DENTIST, he can do the procedure",
-        image :"dentist..png"},
+        image:"dentist..png"},
     optionThree:
       {message:"Go see if Ilana's Veterinarian friend will do the proocedure...", 
-      image: "vet.png"},
+      image:"vet.png"},
   },
 
   page2a:
