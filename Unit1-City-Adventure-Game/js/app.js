@@ -3,6 +3,7 @@ import storyLine from "../data/storyline.js"
 const introSong = new Audio ("../audio/" + storyLine.page0.audio)
 
 /*---------------------------- Variables (state) ----------------------------*/
+let statemap = ["page0", "page1", "page2", "page2a", "page2b", "page2c","page3a", "page3b", "page3c"]
 
 
 
@@ -23,20 +24,7 @@ titleImageEl.addEventListener("click",function(evt){
 
 /*-------------------------------- Functions --------------------------------*/
 
-// function init () {
 
-// }
-
-// function render () {
-  
-
-// }
-
-// function handleClick (evt) {
-
-// }
-
-let statemap = ["page1", "page2", "page3", "page3a", "page3b", "page4"]
 
 
 let userState = 0
