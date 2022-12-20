@@ -1,4 +1,66 @@
+var confetti = {
+	maxCount: 500,		//set max confetti count
+	speed: 5,			//set the particle animation speed
+	frameInterval: 15,	//the confetti animation frame interval in milliseconds
+	alpha: 1.0,			//the alpha opacity of the confetti (between 0 and 1, where 1 is opaque and 0 is invisible)
+	gradient: false,	//whether to use gradients for the confetti particles
+	start: null,		//call to start confetti animation (with optional timeout in milliseconds, and optional min and max random confetti count)
+	stop: null,			//call to stop adding confetti
+	toggle: null,		//call to start or stop the confetti animation depending on whether it's already running
+	pause: null,		//call to freeze confetti animation
+	resume: null,		//call to unfreeze confetti animation
+	togglePause: null,	//call to toggle whether the confetti animation is paused
+	remove: null,		//call to stop the confetti animation and remove all confetti immediately
+	isPaused: null,		//call and returns true or false depending on whether the confetti animation is paused
+	isRunning: null		//call and returns true or false depending on whether the animation is running
+};
 
+(function() {
+	confetti.start = startConfetti;
+	confetti.stop = stopConfetti;
+	confetti.toggle = toggleConfetti;
+	confetti.pause = pauseConfetti;
+	confetti.resume = resumeConfetti;
+	confetti.togglePause = toggleConfettiPause;
+	confetti.isPaused = isConfettiPaused;
+	confetti.remove = removeConfetti;
+	confetti.isRunning = isConfettiRunning;
+	var supportsAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame;
+	var colors = ["rgba(30,144,255,", "rgba(107,142,35,", "rgba(255,215,0,", "rgba(255,192,203,", "rgba(106,90,205,", "rgba(173,216,230,", "rgba(238,130,238,", "rgba(152,251,152,", "rgba(70,130,180,", "rgba(244,164,96,", "rgba(210,105,30,", "rgba(220,20,60,"];
+	var streamingConfetti = false;
+	var animationTimer = null;
+	var pause = false;
+	var lastFrameTime = Date.now();
+	var particles = [];
+	var waveAngle = 0;
+	var context = null;
+
+	function resetParticle(particle, width, height) {
+		particle.color = colors[(Math.random() * colors.length) | 0] + (confetti.alpha + ")");
+		particle.color2 = colors[(Math.random() * colors.length) | 0] + (confetti.alpha + ")");
+		particle.x = Math.random() * width;
+		particle.y = Math.random() * height - height;
+		particle.diameter = Math.random() * 10 + 5;
+		particle.tilt = Math.random() * 10 - 10;
+		particle.tiltAngleIncrement = Math.random() * 0.07 + 0.05;
+		particle.tiltAngle = 0;
+		return particle;
+	}
+
+	function toggleConfettiPause() {
+		if (pause)
+			resumeConfetti();
+		else
+			pauseConfetti();
+	}
+
+	function isConfettiPaused() {
+		return pause;
+	}
+
+	function pauseConfetti() {
+		pause = true;
+	}
 	function resumeConfetti() {
 		pause = false;
 		runAnimation();
