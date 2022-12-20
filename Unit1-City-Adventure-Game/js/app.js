@@ -1,5 +1,6 @@
 /*-------------------------------- Constants --------------------------------*/
-const introSong = new Audio ("../audio/intro.mp3")
+import storyLine from "../data/storyline.js"
+const introSong = new Audio ("../audio/" + storyLine.page0.audio)
 
 /*---------------------------- Variables (state) ----------------------------*/
 
@@ -19,19 +20,35 @@ titleImageEl.addEventListener("click",function(evt){
   introSong.play()
 })
 
-playBtn.addEventListener("click",init)
 
 /*-------------------------------- Functions --------------------------------*/
 
-function init () {
+// function init () {
 
-}
+// }
 
-function render () {
+// function render () {
   
 
-}
+// }
 
-function handleClick (evt) {
+// function handleClick (evt) {
 
+// }
+
+let statemap = ["page1", "page2", "page3", "page3a", "page3b", "page4"]
+
+
+let userState = 0
+function triggerPages (passedUserState) {
+  //passeduserstate = 1, meaning we want to show them page 2
+  let page = statemap[passedUserState]
+  let conDivs = document.querySelectorAll(".conDiv")
+  conDivs.forEach( div => { // when this function runs, grab all the divs and hide them -- clean slate
+    div.style.display = "hidden"
+  })
+  let cDiv = document.getElementById(page) // then grab the div that corresponds to the userState
+  cDiv.textContent = storyLine[page].message // you don't have to populate the div with all the content via this function. You could do that somewhere else. I'm just doing here here to show how you can populate content from the data file and push it into a div in the html
+  cDiv.style.display = "initial"
 }
+triggerPages(userState)
