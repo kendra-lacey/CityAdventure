@@ -1,7 +1,7 @@
 /*-------------------------------- Constants --------------------------------*/
 import storyLine from "../data/storyline.js"
-const introSong = new Audio ("../audio/" + storyLine.page0.audio)
-
+const introSong = new Audio ("../audio/" + storyLine.sounds.intro)
+const winSong = new Audio ("../audio/" + storyLine.sounds.win)
 /*---------------------------- Variables (state) ----------------------------*/
 let statemap = ["page0", "page1", "page2", "page2a", "page2b", "page2c","page3a", "page3b", "page3c"]
 
@@ -9,10 +9,8 @@ let statemap = ["page0", "page1", "page2", "page2a", "page2b", "page2c","page3a"
 
 /*------------------------ Cached Element References ------------------------*/
 const playBtn = document.getElementById('play-btn')
-console.log(playBtn)
 const messageEl= document.querySelector('#message')
 const titleImageEl= document.querySelector('.title-img')
-console.log(titleImageEl)
 
 
 /*----------------------------- Event Listeners -----------------------------*/
@@ -24,8 +22,10 @@ titleImageEl.addEventListener("click",function(evt){
 
 /*-------------------------------- Functions --------------------------------*/
 
-
-
+function playWin(){
+  winSong.volume = .05
+  winSong.play()
+}
 
 let userState = 0
 function triggerPages (passedUserState) {

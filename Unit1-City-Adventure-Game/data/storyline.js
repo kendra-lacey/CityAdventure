@@ -1,35 +1,36 @@
 const storyLine = {
+  sounds: {
+    intro: "intro.mp3",
+    win: "win.mp3",
+    loss: "loss.mp3"
+  },
   page0:
   {
-    order:0,
-    audio: "intro.mp3",
-    message: "Abbi and Ilana are two broke bestfriends living in NYC...press PLAY to go on a quest with them!"
+    message: "Abbi and Illana are two broke bestfriends living in NYC...press PLAY to go on a quest with them!"
   },
 
   page1:
   { 
-    order:1,
     message:"Abbi has a tooth-ache and needs to get her wisdom teeth removed - but has no HeALTh inSurAnCe 😬", 
     optionOne: 
       {message: "Go to Central Park and people watch",
         image: "centralpark.png" },
     optionTwo:
-      {message: "See Ilana's partner who is a DENTIST, he can do the procedure",
+      {message: "See Illana's partner who is a DENTIST, he can do the procedure",
         image:"dentist..png"},
     optionThree:
-      {message:"Go see if Ilana's Veterinarian friend will do the proocedure...", 
+      {message:"Go see if Illana's Veterinarian friend will do the proocedure...", 
       image:"vet.png"},
   },
 
   page2a:
   {
-    order:2,
     message: "go back to options when you have seen enough"
   },
 
   page2b:
   {
-    message: "The prodecure went well! Abbi took some pain-killers... Ilana got distracted & lost her - luckily Abbi left her phone. She gets a call from her bank asking if she really spent X amount of dollars at whole-foods. We found her..but guess how much she spent??"
+    message: "The prodecure went well! Abbi took some pain-killers... Illana got distracted & lost her - luckily Abbi left her phone. She gets a call from her bank asking if she really spent X amount of dollars at whole-foods. We found her..but guess how much she spent??"
   },
 
   page2c:
@@ -40,14 +41,12 @@ const storyLine = {
   page3a:
   {
     message: "YOU WIN!", 
-    audio: "win.mp3 ",
     gif: "wholefoods.gif" ,
   },
 
   page3b:
   {
     message: "YOU WIN!", 
-    audio: "win.mp3 ",
     gif: "abbi.gif",
   }
 }
