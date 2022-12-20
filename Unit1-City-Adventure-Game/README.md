@@ -8,7 +8,7 @@
 >
 >> - Go to Central Park and people watch while you think about what do to. -> then go back and make a decision.
 >> - See Ilana's partner who is a DENTIST, he can do the prodecure. 
->> - Go see if Ilana's Veterinarian friend will to the proocedure...**risky**
+>> - Go see if Ilana's Veterinarian friend will to the procedure...**risky**
 
 > ## :wavy_dash: You lose Abbi:
 >
