@@ -1,7 +1,5 @@
 /*-------------------------------- Constants --------------------------------*/
 import storyLine from "../data/storyline.js"
-const introSong = new Audio ("../audio/" + storyLine.sounds.intro)
-const winSong = new Audio ("../audio/" + storyLine.sounds.win)
 /*---------------------------- Variables (state) ----------------------------*/
 let statemap = ["page0", "page1", "page2", "page2a", "page2b", "page2c","page3a", "page3b", "page3c"]
 
@@ -21,7 +19,10 @@ titleImageEl.addEventListener("click",function(evt){
 
 
 /*-------------------------------- Functions --------------------------------*/
-
+function init (){
+  board = 
+  render()
+}
 function playWin(){
   winSong.volume = .05
   winSong.play()
