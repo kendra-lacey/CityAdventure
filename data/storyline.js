@@ -44,12 +44,12 @@ const storyLine = [
     options: [
       {
         text: "$1,487.56",
-        img: "../images/illana.gif" ,
-        next: 4
+        img: "../images/abbi.png" ,
+        next: 5
       },
       {
         text: "$563.99",
-        img: "../images/wholefoods.gif",
+        img: "../images/illana.gif",
         next: 1
       },
       {
@@ -75,13 +75,33 @@ const storyLine = [
       },
     ]
   },
-
-
-
+// INDEX 4
 
   {
-    isPage: 4,
-    message: "The procedure went well! Abbi was given some weird dog pain meds & was feeling funky so she went home. Ilana goes to check on her but she isnt there.Click on the Squares to find her! You only have 20 seconds!"
+    message: "The procedure went well! Abbi was given some weird dog pain meds & was feeling funky so she went home. Ilana goes to check on her but she isnt there. Guess where she is?! Click on the right location to find her!",
+    options: [
+      {
+        text: "Subway",
+        img: "../images/subway.jpeg" ,
+        next: 1
+      },
+      {
+        text: "Bodega",
+        img: "../images/BODEGA.jpeg",
+        next: 1
+      },
+      {
+        text: "Bed Bath & Beyond",
+        img:"../images/bedbathbeyond.jpeg" ,
+        next: 1
+      }
+      {
+        text: "Dive-Bar",
+        img:"../images/bar.png" ,
+        next: 6
+      },
+
+    ]
   },
 
 

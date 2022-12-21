@@ -36,6 +36,8 @@ function init(){
 function renderMessage(){
   console.log(storyLine[currentIdx])
   messageEl.textContent = storyLine[currentIdx].message
+  
+  messageEl.className = `page${currentIdx}`//this applies ex. "page4" as a class on the dynamically loaded message elements. But it applies a numbered class so that they can be specifically targeted in css
 }
 
 function renderButton(){ //for every option creating a new img
@@ -49,7 +51,7 @@ function renderButton(){ //for every option creating a new img
     buttonsCon.appendChild(img)
     buttonsCon.appendChild(p)
   })
-}
+} //set a class on the p.textcontent such as class = currentIdx. then in your CSS you can target that specific currentIdx
 
 function handleClick(evt){ 
   // handleClick gets evt as an argument 
@@ -57,35 +59,3 @@ function handleClick(evt){
   renderMessage()
   renderButton()
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
