@@ -17,3 +17,9 @@ function playWinSong() {
   winSong.volume = 0.25
   winSong.play()
 }
+
+export {
+  playIntroSong,
+  playLossSong,
+  playWinSong
+}

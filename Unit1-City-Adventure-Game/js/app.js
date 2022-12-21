@@ -1,5 +1,6 @@
 /*-------------------------------- Constants --------------------------------*/
 import storyLine from "../data/storyline.js"
+import * as gameAudio from '../js/audio.js'
 
 /*---------------------------- Variables (state) ----------------------------*/
 let currentIdx
@@ -14,9 +15,8 @@ const buttonsCon = document.querySelector('.buttons')
 
 
 /*----------------------------- Event Listeners -----------------------------*/
-titleImageEl.addEventListener("click",function(evt){
-  introSong.volume = .05
-  introSong.play()
+playBtn.addEventListener("click",function(evt){
+  gameAudio.playIntroSong()
 })
 
 playBtn.addEventListener("click",init)

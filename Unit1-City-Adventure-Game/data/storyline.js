@@ -15,7 +15,7 @@ const storyLine = [
         next: 2
       },
       {
-        text: "Go see if Illana's Veterinarian friend will do the proocedure...",
+        text: "Go see if Illana's Veterinarian friend will do the procedure...",
         img: "../images/vet.png",
         next: 3
       },
@@ -26,13 +26,13 @@ const storyLine = [
     message: "GAME OVER",
     options: [
       {
-        text: "Play Again",
-        img: "",
+        text: "Play Again - Yaas Queen",
+        img: "../images/yas.gif",
         next: 0
       },
       {
         text: "No thanks",
-        img: "",
+        img: "../images/no.png",
         next: 0
       }
     ]
@@ -40,37 +40,37 @@ const storyLine = [
 
   // INDEX 2
   {
-    message: "The prodecure went well! Abbi took some pain-killers... Illana got distracted & lost her - luckily Abbi left her phone. She gets a call from her bank asking if she really spent X amount of dollars at whole-foods. We found her..but guess how much she spent??",
+    message: "The procedure went well! Abbi took some pain-killers... Illana got distracted & lost her - luckily Abbi left her phone. She gets a call from her bank asking if she really spent X amount of dollars at whole-foods. We found her..but guess how much she spent??",
     options: [
       {
-        text: "$1,576",
-        img: "../images/centralpark.png",
-        next: 3
+        text: "$1,487.56",
+        img: "../images/illana.gif" ,
+        next: 4
       },
       {
-        text: "$563",
-        img: "../images/dentist..png",
+        text: "$563.99",
+        img: "../images/wholefoods.gif",
         next: 1
       },
       {
-        text: "$1200",
-        img: "../images/vet.png",
+        text: "$1201.22",
+        img:"../images/abbiwholefoods.gif" ,
         next: 1
       },
     ]
   },
   // INDEX 3
   {
-    message: "The vet is trying to give you dog pain killers what shoud you do?",
+    message: "The vet is trying to give you dog pain killers what should you do?",
     options: [
       {
         text: "take the pillz",
-        img: "../images/centralpark.png",
+        img: "../images/eyes.png",
         next: 4
       },
       {
         text: "throw them back at her",
-        img: "../images/dentist..png",
+        img: "../images/throw.png",
         next: 1
       },
     ]
