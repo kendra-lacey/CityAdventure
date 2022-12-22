@@ -1,25 +1,18 @@
-let introSong = new Audio("../audio/intro.mp3")
-let lossSong = new Audio("../audio/loss.mp3")
-let winSong = new Audio("../audio/win.mp3")
-
-
-function playIntroSong() {
-  introSong.volume = 0.03
-  introSong.play()
+let songs = {
+  introSong: new Audio("../audio/intro.mp3"),
+  lossSong: new Audio("../audio/loss.mp3"),
+  winSong: new Audio("../audio/win.mp3")
 }
 
-function playLossSong() {
-  lossSong.volume = 0.15
-  lossSong.play()
-}
-
-function playWinSong() {
-  winSong.volume = 0.15
-  winSong.play()
+function playSong(song) {
+  console.log(song)
+  songs[song].volume = 0.03
+  songs[song].play()
+  setTimeout(function(){
+    songs[song].pause();
+  },18000);
 }
 
 export {
-  playIntroSong,
-  playLossSong,
-  playWinSong
+  playSong
 }

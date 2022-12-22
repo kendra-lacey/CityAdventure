@@ -36,16 +36,19 @@ img {
   width: 400px;
   height: 300px;
   cursor: grab;
+  border-radius: 60px;
 }
 .title-img{
   width: 100%;
   max-width: unset;
   max-height: unset;
+  border-radius: 10px;
 }
 
 p {
   text-align: center;
   font-family:'Nunito', sans-serif;
+  font-size: 20px;
 }
 
 #play-btn {
@@ -63,25 +66,48 @@ p {
 
 .page1{
   font-family: 'Press Start 2P', cursive;
-  font-size:30px;
+  font-size: 40px;
+  text-align: center;
+  color: #FFDB58;
+  -webkit-text-stroke: 2px rgb(218, 17, 134);
+  white-space: pre-line;
+}
+img.page1{
+  padding: 20px
+}
+
+.page7{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 40px;
   text-align: center;
   color: #FFDB58;
   -webkit-text-stroke: 2px rgb(219, 83, 92);
 }
-p {
+
+.page8 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 40px;
+  text-align: center;
+  color: #FFDB58;
+  -webkit-text-stroke: 2px rgb(219, 83, 92);
+}
+
+.p {
   text-align: center;
   font-family:'Nunito', sans-serif;
-  font-size: medium;
-  font-weight:400
 }
+
 .body1 {
   background-image:url(../images/stacked-steps-haikei.png) ;
 }
-
+.body1 > .buttons {
+  flex-direction: row;
+}
 .buttons {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  text-align: center
+  text-align: center;
 }

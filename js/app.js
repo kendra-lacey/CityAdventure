@@ -16,7 +16,7 @@ const backgroundImg = document.querySelector('.background-img')
 
 /*----------------------------- Event Listeners -----------------------------*/
 playBtn.addEventListener("click",function(evt){
-  gameAudio.playIntroSong()
+  gameAudio.playSong("introSong")
 })
 
 playBtn.addEventListener("click",init)
@@ -46,18 +46,30 @@ function renderButton(){ //for every option creating a new img
   buttonsCon.innerHTML = "" //clearing out container
   storyLine[currentIdx].options.forEach(choice => {
     const img = document.createElement('img')
+    img.className = `page${currentIdx}`
     const p = document.createElement('p')
+    const div = document.createElement('div')
     img.src = choice.img
     img.id = choice.next // take value of next & assign it to img Id so we can use it in handleClick()
     p.textContent = choice.text
-    buttonsCon.appendChild(img)
-    buttonsCon.appendChild(p)
+    let theDiv = buttonsCon.appendChild(div)
+    theDiv.appendChild(p)
+    theDiv.appendChild(img)
+    if('song' in choice){
+      gameAudio.playSong(choice.song)
+    }
+    if("confetti" in choice){
+      confetti.start(1500)
+    }
   })
 } //set a class on the p.textcontent such as class = currentIdx. then in your CSS you can target that specific currentIdx
 
 function handleClick(evt){ 
   // handleClick gets evt as an argument 
   currentIdx = evt.target.id // updating value of current idx to be the id of the img that is clicked
+  if(evt.target.id == 0){
+    location.reload()
+  }
   renderMessage()
   renderButton()
 }

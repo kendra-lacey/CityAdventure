@@ -1,8 +1,17 @@
 const storyLine = [
 
+//1. increase the index comment by +1 and each next +1 to create room for a new index 0 - to use to store the initial page
+//2. Determine how to inject html into the page based on html that is stored in each index in this file. One option is raw html, another is to store some objects like: structure: [p, div, div] which would then be iterated over to create a div inside a div inside a p. Raw html might be easier
+//3. Create the object for index 0, the initial page
+//4. create the object for the game over page that incudes  additional message
+//5. do something like a message.foreach  where an index object only has one message, it will put the first one in a specific div, and the second message in a different div
+//6. use css to target specific elements and apply styles to move them to where you want them
+//7. add song: introSong to new index 0
+
+
   // INDEX 0
   {
-    message: "Abbi has a tooth-ache and needs to get her wisdom teeth removed - but has no HeALTh inSurAnCe 😬",
+    message: "Abbi has a tooth-ache and needs to get her wisdom teeth removed - but has no HeALTh inSurAnCe 😬 \n what should she do?",
     options: [
       {
         text: "Go to Central Park and people watch",
@@ -23,7 +32,8 @@ const storyLine = [
   },
   // INDEX 1
   {
-    message: "GAME OVER",
+    message: "GAME OVER \r\n PLAY AGAIN?",
+    song:"lossSong",
     options: [
       {
         text: "Yaas Queen",
@@ -40,7 +50,7 @@ const storyLine = [
 
   // INDEX 2
   {
-    message: "The procedure went well! Abbi took some pain-killers... Illana got distracted & lost her - luckily Abbi left her phone. She gets a call from her bank asking if she really spent X amount of dollars at whole-foods. We found her..but guess how much she spent??",
+    message: "The procedure went well! Abbi took some pain-killers... Illana got distracted & lost her - luckily Abbi left her phone. Abbi gets a call from her bank asking if she really spent X amount of dollars at whole-foods. We found her..but guess how much she spent??",
     options: [
       {
         text: "$1,487.56",
@@ -78,7 +88,7 @@ const storyLine = [
 // INDEX 4
 
   {
-    message: "The procedure went well! Abbi was given some weird dog pain meds & was feeling funky so she went home. Ilana goes to check on her but she isnt there. Guess where she is?! Click on the right location to find her!",
+    message: "The procedure went well! Abbi was given some weird dog pain meds & was feeling funky so she went home. Illana goes to check on her but she isnt there. Guess where she is?! Click on the right location to find her!",
     options: [
       {
         text: "Subway",
@@ -109,7 +119,7 @@ const storyLine = [
   message: "You find Abbi at an Old-Timey bar. Everyone is calling her Val?? People are begging her to do a performance.",
   options: [
     {
-      text: "take her home!",
+      text: "Take her home!",
       img: "../images/valoldlady.gif" ,
       next: 1
     },
@@ -132,11 +142,11 @@ const storyLine = [
     {
       text: "Grab snacks!",
       img: "../images/Bodega_Cat.jpg" ,
-      next: 1
+      next: 4
     },
     {
       text: "Go to the park",
-      img: "../images/gameboard/centralpark.jpg",
+      img: "../images/gameboard/centralpark.jpeg",
       next: 1
     },
   ]
@@ -149,7 +159,9 @@ const storyLine = [
     {
       text: "You discover that when Abbi is under the influence she has an alter ego named Val that she turns into..She's been going to that bar  for years?!",
       img: "../images/abbi.gif",
-      next: 1
+      next: 1,
+      song: "winSong",
+      confetti: "true"
     }
   ]
 },
@@ -163,25 +175,16 @@ const storyLine = [
       {
         text: "Yaaas Kween",
         img:"../images/wholefoods.gif",
-        next: 1
+        next: 1,
+        song: "winSong",
+        confetti: "true"
       }
     ]
   },
 
 ];
 
-//<img src ="../images/" + storyLine.page1.optionone.image />
 
-
-
-
-// page 0
-// page 1
-// page 1 -> page 2, page 1 -> 2b, page 1 -> 2c
-// page 2a -> page 1, page 2b (game) win -> page 3a | lose -> page 0 , page 2c (game) win -> page 3b | lose -> page 0
-// page 3a (confetti/song/gif), page 3b (confetti/song/gif)
-
-// 10 pages
 
 
 function generateContent() {
