@@ -28,9 +28,9 @@ h1 {
   -webkit-text-stroke: 1px black;
 }
 
-title {
+/* title {
   width: 100%;
-}
+} */
 img { 
   justify-content: center;
   width: 400px;
@@ -38,10 +38,14 @@ img {
   cursor: grab;
   border-radius: 60px;
 }
+
+#main{
+  justify-content: center;
+}
 .title-img{
-  width: 100%;
-  max-width: unset;
-  max-height: unset;
+  align-self: center;
+  width: 80%;
+  max-width: 80%;
   border-radius: 10px;
 }
 

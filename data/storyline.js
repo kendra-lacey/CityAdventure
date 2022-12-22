@@ -117,7 +117,7 @@ const storyLine = [
 
 //INDEX 5
 {
-  message: "You find Abbi at an Old-Timey bar. Everyone is calling her Val?? People are begging her to do a performance.",
+  message: "You find Abbi at an Old-Timey bar. Everyone is calling her Val?? People are begging her to do a performance. Do you",
   options: [
     {
       text: "Take her home!",
@@ -158,7 +158,7 @@ const storyLine = [
   message: "YOU WIN",
   options: [
     {
-      text: "You discover that when Abbi is under the influence she has an alter ego named Val that she turns into..She's been going to that bar  for years?!",
+      text: "You discover that when Abbi is under the influence she transforms into Val. Val speaks in 1920's slang ,loves martini's and swallows her own nose ring...because she loves diamonds.apparenly she's been going to that bar for years?!",
       img: "../images/abbi.gif",
       next: 1,
       song: "winSong",

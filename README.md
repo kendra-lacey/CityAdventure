@@ -11,7 +11,7 @@
 > - Go see if Illana's Veterinarian friend will to the procedure...**risky**
 >> After the prodecure you lose Abbi .. she is somewhere in NYC and you have to find her. 
 
-![title](./images/CityAdventure.png)
+> ![title](./images/CityAdventure.png)
 
 >## :wavy_dash: Technologies Used:
 > - HTML5 and CSS
@@ -26,4 +26,6 @@
 > - Improve Responsive Design
 > - Mobile Device Usability
 
+>## :wavy_dash: Planning Materials:
+>**[Planning Materials](https://trello.com/b/vCgXyf9l/broad-city-choose-your-own-adventure-game)**
 

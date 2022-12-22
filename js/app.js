@@ -5,8 +5,6 @@ import * as gameAudio from '../js/audio.js'
 /*---------------------------- Variables (state) ----------------------------*/
 let currentIdx
 
-
-
 /*------------------------ Cached Element References ------------------------*/
 const playBtn = document.getElementById('play-btn')
 const messageEl = document.querySelector('#message')
