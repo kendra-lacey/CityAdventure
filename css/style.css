@@ -63,7 +63,9 @@ p {
   border: 3px dashed #FFDB58 ;
   box-shadow: 5px 5px;
 }
-
+.page0 {
+  white-space: pre-line;
+}
 .page1{
   font-family: 'Press Start 2P', cursive;
   font-size: 40px;

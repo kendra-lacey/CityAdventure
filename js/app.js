@@ -13,6 +13,7 @@ const messageEl = document.querySelector('#message')
 const titleImageEl = document.querySelector('.title-img')
 const buttonsCon = document.querySelector('.buttons')
 const backgroundImg = document.querySelector('.background-img')
+const titleEl = document.querySelector('.title')
 
 /*----------------------------- Event Listeners -----------------------------*/
 playBtn.addEventListener("click",function(evt){
@@ -37,7 +38,7 @@ function init(){
 function renderMessage(){
   console.log(storyLine[currentIdx])
   messageEl.textContent = storyLine[currentIdx].message
-  
+  titleEl.classList.add('animate__animated' , 'animate__slideInLeft')
   messageEl.className = `page${currentIdx}`//this applies ex. "page4" as a class on the dynamically loaded message elements. But it applies a numbered class so that they can be specifically targeted in css
   backgroundImg.className = `body${currentIdx}`
 }

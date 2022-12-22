@@ -11,7 +11,7 @@ const storyLine = [
 
   // INDEX 0
   {
-    message: "Abbi has a tooth-ache and needs to get her wisdom teeth removed - but has no HeALTh inSurAnCe 😬 \n what should she do?",
+    message: "Abbi has a tooth-ache and needs to get her wisdom teeth removed - but has no HeALTh inSurAnCe 😬 \r\n What should she do?",
     options: [
       {
         text: "Go to Central Park and people watch",
@@ -33,12 +33,13 @@ const storyLine = [
   // INDEX 1
   {
     message: "GAME OVER \r\n PLAY AGAIN?",
-    song:"lossSong",
     options: [
       {
         text: "Yaas Queen",
         img: "../images/yas.gif",
+        song:"lossSong",
         next: 0
+
       },
       {
         text: "No thanks",
