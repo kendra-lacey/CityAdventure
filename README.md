@@ -29,3 +29,12 @@
 >## :wavy_dash: Planning Materials:
 >**[Planning Materials](https://trello.com/b/vCgXyf9l/broad-city-choose-your-own-adventure-game)**
 
+>## :wavy_dash: Credits/Attribution:
+> -[Heart favicon created by Freepik - Flaticon](<a href="https://www.flaticon.com/free-icons/heart" 
+> - Media - Comedy Central
+> - **[Animation](https://animate.style/)**
+> - **[Confetti](https://github.com/Agezao/confetti-js)**
+
+
+
+
