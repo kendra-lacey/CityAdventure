@@ -12,7 +12,7 @@ const playBtn = document.getElementById('play-btn')
 const messageEl = document.querySelector('#message')
 const titleImageEl = document.querySelector('.title-img')
 const buttonsCon = document.querySelector('.buttons')
-
+const backgroundImg = document.querySelector('.background-img')
 
 /*----------------------------- Event Listeners -----------------------------*/
 playBtn.addEventListener("click",function(evt){
@@ -28,6 +28,7 @@ buttonsCon.addEventListener("click",handleClick)
 
 function init(){
   playBtn.hidden = true
+  titleImageEl.hidden = true
   currentIdx = 0 // idx of the current story path we want to show the user
   renderMessage()
   renderButton()
@@ -38,6 +39,7 @@ function renderMessage(){
   messageEl.textContent = storyLine[currentIdx].message
   
   messageEl.className = `page${currentIdx}`//this applies ex. "page4" as a class on the dynamically loaded message elements. But it applies a numbered class so that they can be specifically targeted in css
+  backgroundImg.className = `body${currentIdx}`
 }
 
 function renderButton(){ //for every option creating a new img
@@ -59,3 +61,4 @@ function handleClick(evt){
   renderMessage()
   renderButton()
 }
+

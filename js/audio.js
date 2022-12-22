@@ -4,17 +4,17 @@ let winSong = new Audio("../audio/win.mp3")
 
 
 function playIntroSong() {
-  introSong.volume = 0.25
+  introSong.volume = 0.03
   introSong.play()
 }
 
 function playLossSong() {
-  lossSong.volume = 0.25
+  lossSong.volume = 0.15
   lossSong.play()
 }
 
 function playWinSong() {
-  winSong.volume = 0.25
+  winSong.volume = 0.15
   winSong.play()
 }
 

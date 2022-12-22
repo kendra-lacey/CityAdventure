@@ -26,14 +26,14 @@ const storyLine = [
     message: "GAME OVER",
     options: [
       {
-        text: "Play Again - Yaas Queen",
+        text: "Yaas Queen",
         img: "../images/yas.gif",
         next: 0
       },
       {
         text: "No thanks",
         img: "../images/no.png",
-        next: 0
+        next: []
       }
     ]
   },
@@ -45,7 +45,7 @@ const storyLine = [
       {
         text: "$1,487.56",
         img: "../images/abbi.png" ,
-        next: 5
+        next: 8
       },
       {
         text: "$563.99",
@@ -82,45 +82,93 @@ const storyLine = [
     options: [
       {
         text: "Subway",
-        img: "../images/subway.jpeg" ,
+        img: "../images/gameboard/subway.jpeg" ,
         next: 1
       },
       {
         text: "Bodega",
-        img: "../images/BODEGA.jpeg",
-        next: 1
+        img: "../images/gameboard/BODEGA.jpeg",
+        next: 6
       },
       {
         text: "Bed Bath & Beyond",
-        img:"../images/bedbathbeyond.jpeg" ,
+        img:"../images/gameboard/bedbathbeyond.jpeg" ,
         next: 1
-      }
+      },
       {
         text: "Dive-Bar",
         img:"../images/bar.png" ,
-        next: 6
+        next: 5
       },
 
     ]
   },
 
+//INDEX 5
+{
+  message: "You find Abbi at an Old-Timey bar. Everyone is calling her Val?? People are begging her to do a performance.",
+  options: [
+    {
+      text: "take her home!",
+      img: "../images/valoldlady.gif" ,
+      next: 1
+    },
+    {
+      text: "Encourage Abbi to sing",
+      img: "../images/val.jpg",
+      next: 7
+    },
+    {
+      text: "Check out the scene..",
+      img: "../images/abbi.val.gif",
+      next: 7
+    }
+  ]
+},
+// INDEX 6
+{
+  message: "Abbi is at the Bodega petting the cat, what should you do next?",
+  options: [
+    {
+      text: "Grab snacks!",
+      img: "../images/Bodega_Cat.jpg" ,
+      next: 1
+    },
+    {
+      text: "Go to the park",
+      img: "../images/gameboard/centralpark.jpg",
+      next: 1
+    },
+  ]
+},
+
+//INDEX 7
+{ 
+  message: "YOU WIN",
+  options: [
+    {
+      text: "You discover that when Abbi is under the influence she has an alter ego named Val that she turns into..She's been going to that bar  for years?!",
+      img: "../images/abbi.gif",
+      next: 1
+    }
+  ]
+},
+
+
+//INDEX 8
 
   {
-    isPage: 5,
     message: "YOU WIN!",
-    gif: "../images/wholefoods.gif",
+    options: [
+      {
+        text: "Yaaas Kween",
+        img:"../images/wholefoods.gif",
+        next: 1
+      }
+    ]
   },
 
-
-  {
-    isPage: 6,
-    message: "YOU WIN!",
-    gif: "../images/abbi.gif",
-  }
 ];
-
-
-
 
 //<img src ="../images/" + storyLine.page1.optionone.image />
 
