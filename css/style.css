@@ -16,13 +16,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-image:linear-gradient(to left top	,#FFDB58, #FF69B4, #FF8C00, #FA8072);
+  min-height: 100vh;
 }
 
 
 h1 {
   font-family: 'Press Start 2P', cursive;
   text-align: center;
+  align-items: center;
   color:#FFDB58;
   /* color: #85C1E9 ; */
   -webkit-text-stroke: 1px black;
@@ -39,13 +42,16 @@ img {
   border-radius: 60px;
 }
 
-#main{
+/* .main{
+  background-color: antiquewhite;
+  display: flex;
   justify-content: center;
-}
+
+} */
+
 .title-img{
   align-self: center;
-  width: 80%;
-  max-width: 80%;
+  width: 100%;
   border-radius: 10px;
 }
 

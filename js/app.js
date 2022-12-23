@@ -54,8 +54,9 @@ function renderButton(){ //for every option creating a new img
     let theDiv = buttonsCon.appendChild(div)
     theDiv.appendChild(p)
     theDiv.appendChild(img)
-    if('song' in choice){
-      gameAudio.playSong(choice.song)
+    if('song' in choice){ // if the storyLine[currentIdx] object has a song in it (a key that is 'song') -- run these functions
+      gameAudio.stopSongs()//stop any songs that are currently playing
+      gameAudio.playSong(choice.song)//play the value of the 'song' key in the storyLine[currentIdx] object (which is grabbed from storyline)
     }
     if("confetti" in choice){
       confetti.start(1500)

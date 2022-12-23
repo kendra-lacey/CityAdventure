@@ -158,7 +158,7 @@ const storyLine = [
   message: "YOU WIN",
   options: [
     {
-      text: "You discover that when Abbi is under the influence she transforms into Val. Val speaks in 1920's slang ,loves martini's and swallows her own nose ring...because she loves diamonds.apparenly she's been going to that bar for years?!",
+      text: "You discover that when Abbi is under the influence she transforms into Val. Val speaks in 1920's slang ,loves martini's and swallows her own nose ring...because she loves diamonds.Apparenly she's been going to that bar for years?!",
       img: "../images/abbi.gif",
       next: 1,
       song: "winSong",

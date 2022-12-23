@@ -5,7 +5,6 @@ let songs = {
 }
 
 function playSong(song) {
-  console.log(song)
   songs[song].volume = 0.03
   songs[song].play()
   setTimeout(function(){
@@ -13,6 +12,13 @@ function playSong(song) {
   },18000);
 }
 
+function stopSongs(){
+  Object.values(songs).forEach(val => {
+    val.pause()
+  });
+}
+
 export {
-  playSong
+  playSong,
+  stopSongs
 }
