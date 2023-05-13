@@ -1,6 +1,6 @@
 # :city_sunrise: _City Adventure_  :video_game:
 
->## :wavy_dash:LINK TO PLAY THE GAME:
+>## :wavy_dash: LINK TO PLAY THE GAME:
 ># **[City-Adventure](https://city-adventure.netlify.app/)**
 >## :wavy_dash: ABOUT THE GAME
 > ### I'm an avid fan of Illana Glazer and Abbi Jacobson - this choose-your-own-adventure style game is inspired by their show Broad City on Comedy Central.
@@ -10,7 +10,7 @@
 > - See Illana's partner who is a DENTIST, he can do the prodecure. 
 > - Go see if Illana's Veterinarian friend will to the procedure...**risky**  
 
-> After the prodecure you lose Abbi .. she is somewhere in NYC and you have to find her. 
+ >After the prodecure you lose Abbi .. she is somewhere in NYC and you have to find her. 
 
 > ![title](./images/CityAdventure.png)
 

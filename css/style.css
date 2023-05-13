@@ -20,7 +20,12 @@ body {
   background-image:linear-gradient(to left top	,#FFDB58, #FF69B4, #FF8C00, #FA8072);
   min-height: 100vh;
 }
-
+i {
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  padding-right: 10px;
+}
 
 h1 {
   font-family: 'Press Start 2P', cursive;
@@ -31,9 +36,6 @@ h1 {
   -webkit-text-stroke: 1px black;
 }
 
-/* title {
-  width: 100%;
-} */
 img { 
   justify-content: center;
   width: 400px;
@@ -42,12 +44,6 @@ img {
   border-radius: 60px;
 }
 
-/* .main{
-  background-color: antiquewhite;
-  display: flex;
-  justify-content: center;
-
-} */
 
 .title-img{
   align-self: center;
@@ -72,6 +68,11 @@ p {
   border-radius: 15px;
   border: 3px dashed #FFDB58 ;
   box-shadow: 5px 5px;
+}
+
+#mute {
+  width: 30px;
+  height: 30px;
 }
 .page0 {
   white-space: pre-line;

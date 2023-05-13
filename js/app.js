@@ -7,6 +7,7 @@ let currentIdx
 
 /*------------------------ Cached Element References ------------------------*/
 const playBtn = document.getElementById('play-btn')
+const muteBtn = document.getElementById('mute')
 const messageEl = document.querySelector('#message')
 const titleImageEl = document.querySelector('.title-img')
 const buttonsCon = document.querySelector('.buttons')
@@ -20,7 +21,13 @@ playBtn.addEventListener("click",function(evt){
 
 playBtn.addEventListener("click",init)
 
+muteBtn.addEventListener("click", function(evt){
+  gameAudio.stopSongs()
+})
+
 buttonsCon.addEventListener("click",handleClick)
+
+// document.getElementById("myAudio").controls = true;
 
 
 /*-------------------------------- Functions --------------------------------*/
