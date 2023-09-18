@@ -16,7 +16,7 @@ const storyLine = [
       {
         text: "Go to Central Park and people watch",
         img: "../images/centralpark.png",
-        next: 1
+        next: 9
       },
       {
         text: "See Illana's partner who is a DENTIST, he can do the procedure",
@@ -182,6 +182,24 @@ const storyLine = [
       }
     ]
   },
+
+  // INDEX 9 
+
+  {
+    message: "You see a craigslist add floating around to go clean a mans house but you have to do it half dressed, do you do it or keep looking for something else?",
+    options: [
+      {
+        text: "Yes, let's get that money",
+        img:"../images/giphy.gif",
+        next: 10,
+      },
+      {
+        text: "Absolutely not...what if we play some drums?",
+        img:"../images/drums.gif",
+        next: 10,
+      }
+    ]
+  }
 
 ];
 
