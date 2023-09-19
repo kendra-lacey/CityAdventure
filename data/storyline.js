@@ -190,17 +190,31 @@ const storyLine = [
     options: [
       {
         text: "Yes, let's get that money",
-        img:"../images/giphy.gif",
+        img:"../images/money.gif",
         next: 10,
       },
       {
         text: "Absolutely not...what if we play some drums?",
         img:"../images/drums.gif",
-        next: 10,
+        next: 11,
       }
     ]
-  }
+  },
 
+
+  // INDEX 10
+
+  {
+    message: "The Guy turned out to be a total weirdo and claimed he is a just a baby and has  no money, so he can't pay you",
+  options: [
+    {
+      text: "",
+      img: "../images/baby.gif",
+      song:"lossSong",
+      next: 1
+    },
+]
+  }
 ];
 
 
