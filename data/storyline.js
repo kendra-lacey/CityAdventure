@@ -238,17 +238,16 @@ const storyLine = [
   // INDEX 12
 
   {
-    message: "",
+    message: "YOU WIN!",
     options: [
     {
-      text: "You have earned enough money for Abbi, YOU WIN!",
+      text: "You have earned enough money for Abbi",
       img:"../images/thrift.gif",
       song:"winSong",
       next:1,
-    }, 
-    {
-
-    }],
+      confetti: true,
+    }
+    ],
   },
 ];
 
