@@ -239,7 +239,16 @@ const storyLine = [
 
   {
     message: "",
-    options: [{}, {}],
+    options: [
+    {
+      text: "You have earned enough money for Abbi, YOU WIN!",
+      img:"../images/thrift.gif",
+      song:"winSong",
+      next:1,
+    }, 
+    {
+
+    }],
   },
 ];
 
