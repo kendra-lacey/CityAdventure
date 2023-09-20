@@ -217,24 +217,30 @@ const storyLine = [
     ],
   },
 
-  //INDEX 11 
+  //INDEX 11
 
   {
-      message: "Abi and Ilana made decent money playing music in central park, they need to do something else though",
-      options: [
-        {
-          text:"Sell clothes that the rich kids Nanny gave you to donate at Beacons Closet",
-          img:"../images/thrift.webp",
-          next:12,
-        },
-        {
-          text:"Air bnb the apartment for a weekend",
-          img:"../images/map.webp",
-          next:13,
-        }
-      ]
-    },
-    
+    message:
+      "Abi and Ilana made decent money playing music in central park, they need to do something else though",
+    options: [
+      {
+        text: "Sell clothes that the rich kids Nanny gave you to donate at Beacons Closet",
+        img: "../images/thrift.webp",
+        next: 12,
+      },
+      {
+        text: "Air bnb the apartment for a weekend",
+        img: "../images/map.webp",
+        next: 13,
+      },
+    ],
+  },
+  // INDEX 12
+
+  {
+    message: "",
+    options: [{}, {}],
+  },
 ];
 
 function generateContent() {}
