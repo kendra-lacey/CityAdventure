@@ -224,16 +224,17 @@ const storyLine = [
       options: [
         {
           text:"Sell clothes that the rich kids Nanny gave you to donate at Beacons Closet",
-          img:"../images/thrift.gif",
+          img:"../images/thrift.webp",
           next:12,
         },
         {
           text:"Air bnb the apartment for a weekend",
-          img:"../images/bnb.gif",
+          img:"../images/map.webp",
           next:13,
         }
       ]
     },
+    
 ];
 
 function generateContent() {}
