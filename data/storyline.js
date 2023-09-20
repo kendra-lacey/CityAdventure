@@ -223,14 +223,14 @@ const storyLine = [
       message: "Abi and Ilana made decent money playing music in central park, they need to do something else though",
       options: [
         {
-          text:"Sell clothes that the rich kids Nanny gave you to donate",
-          img:,
-          next:,
+          text:"Sell clothes that the rich kids Nanny gave you to donate at Beacons Closet",
+          img:"../images/thrift.gif",
+          next:12,
         },
         {
-          text:"Sell clothes that the rich kids Nanny gave you to donate",
-          img:,
-          next:,
+          text:"Air bnb the apartment for a weekend",
+          img:"../images/bnb.gif",
+          next:13,
         }
       ]
     },
