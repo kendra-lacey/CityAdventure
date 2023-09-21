@@ -255,7 +255,9 @@ const storyLine = [
     message: "",
     options: [
       {
-
+        text: "You get robbed and because you rented out your apartment you camp obn the roof..it's so windy that your tent rips. You Lose!",
+        img: "../images/bnb.gif",
+        next: 1,
       }
     ],
   }
