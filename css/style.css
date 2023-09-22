@@ -124,3 +124,7 @@ img.page1{
   align-items: center;
   text-align: center;
 }
+
+p {
+  font-family: 'Josefin Sans', sans-serif;
+}

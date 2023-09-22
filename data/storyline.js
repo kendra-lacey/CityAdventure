@@ -252,10 +252,10 @@ const storyLine = [
 
   // INDEX 13 
   {
-    message: "",
+    message: "You Lose!",
     options: [
       {
-        text: "You get robbed and because you rented out your apartment you camp obn the roof..it's so windy that your tent rips. You Lose!",
+        text: "You get robbed and because you rented out your apartment you camp on the roof..it's so windy that your tent rips.",
         img: "../images/bnb.gif",
         next: 1,
       }
